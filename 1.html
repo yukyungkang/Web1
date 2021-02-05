@@ -3,24 +3,54 @@
 <head>
 <title>강유경-포폴</title> <!--웹탭제목-->
 <meta charset="utf-8">
+<style>
+    /*ID 선택자*/
+    #active {
+        color: red;
+    }
+    .saw {
+        color:gray;
+        }
+     /*태그 선택자가 ID선택자 보다 좀더 포괄적이며 높음 */
+    a {
+        color:black;
+        text-decoration:none;
+    }
+    h1 {
+       font-size:45px; 
+       text-align: center;
+       border-bottom:2px solid gray;
+       margin:0;
+       padding:20px;
+    }
+    ol {
+        border-right: 2px solid gray;
+        width: 100px;
+        margin: 0;
+        padding: 20px;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+</style>
 </head>
-    <h1><a href="index.html">이력서</a></h1>
+<body>
+    <h1><a href="index.html">포트폴리오</a></h1>
+    <div id="grid">
     <ol>
-        <li><a href="1.html">인적사항</a></li>
-        <li><a href="2.html">기술 및 역량</a></li>
-        <li><a href="3.html">경력기술서</a></li>
+        <li><a href="1.html" class="saw" id="active">인적사항</a></li>
+        <li><a href="2.html" class="saw">기술 및 역량</a></li>
+        <li><a href="3.html" class="saw">경력기술서</a></li>
     </ol>
-    <body>
-    <P>
-    <h2>인적사항</h2>
-    <img src="Photo.jpg"><br>
-    이름 : 강유경<br>
-    생년월일 : 880504<br>
-    휴대폰 번호 : 010-5435-1056<br>
-    이메일 주소 : <a href='kuarl@naver.com' title='제 이메일 주소 입니다'>kuarl@naver.com</a><br>
-    학교 : 경희대학교 / 스포츠지도학과 / 졸업<br>
-    </body>
-    </Ul>
-</P>
-
+        <div>
+            <h2>인적사항</h2>
+            <img src="Photo.jpg"><br>
+            이름 : 강유경<br>
+            생년월일 : 880504<br>
+            휴대폰 번호 : 010-5435-1056<br>
+            이메일 주소 : <a href='kuarl@naver.com' title='제 이메일 주소 입니다'>kuarl@naver.com</a><br>
+            학교 : 경희대학교 / 스포츠지도학과 / 졸업<br>
+         </div>
+</body>
 </html>

@@ -3,37 +3,74 @@
 <head>
 <title>강유경-포폴</title> <!--웹탭제목-->
 <meta charset="utf-8">
+<style>
+    /*ID 선택자*/
+    #active {
+        color: red;
+    }
+    .saw {
+        color:gray;
+        }
+     /*태그 선택자가 ID선택자 보다 좀더 포괄적이며 높음 */
+    a {
+        color:black;
+        text-decoration:none;
+    }
+    h1 {
+       font-size:45px; 
+       text-align: center;
+       border-bottom:2px solid gray;
+       margin:0;
+       padding:20px;
+    }
+    ol {
+        border-right: 2px solid gray;
+        width: 100px;
+        margin: 0;
+        padding: 20px;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+    }
+</style>
 </head>
-    <h1><a href="index.html">이력서</a></h1>
+<body>
+    <h1><a href="index.html">포트폴리오</a></h1>
+    <div id="grid">
     <ol>
-        <li><a href="1.html">인적사항</a></li>
-        <li><a href="2.html">기술 및 역량</a></li>
+        <li><a href="1.html" class="saw">인적사항</a></li>
+        <li><a href="2.html" class="saw" id="active">기술 및 역량</a></li>
         <li><a href="3.html">경력기술서</a></li>
     </ol>
-    <h2>기술 및 역량</h2>
-    <p>
-        <b>[보유 기술]</b><br>
-        <br>
-        1. BTS<br>
-            - Mantis, JIRA 사용 경험 보유<br>
-        2. 테스트도구<br>
-            - adb logcat 추출 및 apk설치<br>
-            - AMOS 성능 평가 (차량용 성능평가 도구)<br>
-        3. 협업도구<br>
-            - Google docs, MS one note 활용 산출물 작성 및 공유<br>
-        4. OA<br>
-            - Word : 중 / Excel : 중 / PowerPoint : 중<br>
-        <br>  
-        <b>[핵심 역량]</b><br>
-        <br>
-        1. Embedded, WEB 및 APP 등 다양한 플랫폼 대상 블랙박스 테스트 수행 경험 보유<br>
-        2. 사용자 유스케이스 및 요구사항 기반 테스트 케이스 설계<br>
-            - Google docs 협업 도구 이용 테스트케이스 공유 및 작성<br>
-        3. 테스트 계획에 따른 테스트 인력 운영 경험 보유<br>
-        4. 이슈 보고 시 확인된 이슈에 따른 심각도 및 우선순위 기준 관리<br>
-        5. JIRA, Mantis 등 다양한 BTS기반 업무 수행<br>
-        6. 사업 진행 시 B2B, B2C CS 요구 사항 분석을 통한 개선점 기획<br>
-        7. 다양한 프로젝트 수행을 통한 원활한 커뮤니케이션 능력 보유<br>
-    </p>
+        <div>
+            <h2>기술 및 역량</h2>
+            <p>
+                <b>[보유 기술]</b><br>
+                <br>
+                1. BTS<br>
+                - Mantis, JIRA 사용 경험 보유<br>
+                2. 테스트도구<br>
+                - adb logcat 추출 및 apk설치<br>
+                - AMOS 성능 평가 (차량용 성능평가 도구)<br>
+                3. 협업도구<br>
+                - Google docs, MS one note 활용 산출물 작성 및 공유<br>
+                4. OA<br>
+                - Word : 중 / Excel : 중 / PowerPoint : 중<br>
+                <br>  
+                <b>[핵심 역량]</b><br>
+                <br>
+                1. Embedded, WEB 및 APP 등 다양한 플랫폼 대상 블랙박스 테스트 수행 경험 보유<br>
+                2. 사용자 유스케이스 및 요구사항 기반 테스트 케이스 설계<br>
+                - Google docs 협업 도구 이용 테스트케이스 공유 및 작성<br>
+                3. 테스트 계획에 따른 테스트 인력 운영 경험 보유<br>
+                4. 이슈 보고 시 확인된 이슈에 따른 심각도 및 우선순위 기준 관리<br>
+                5. JIRA, Mantis 등 다양한 BTS기반 업무 수행<br>
+                6. 사업 진행 시 B2B, B2C CS 요구 사항 분석을 통한 개선점 기획<br>
+                7. 다양한 프로젝트 수행을 통한 원활한 커뮤니케이션 능력 보유<br>
+            </p>
+        </div>
+    </div>
+</body>
 
 </html>
